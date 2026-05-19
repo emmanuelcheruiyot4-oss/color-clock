@@ -1,16 +1,56 @@
-# React + Vite
+# React Live Clock ⏰
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that displays the current date and time, updating every second in real time. It uses **React hooks** and **date-fns** for formatting.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Displays current date and time
+- Updates every second automatically
+- Clean and minimal UI
+- Uses `date-fns` for date formatting
 
-## React Compiler
+## Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+When running, the app shows something like:
+current time: May 19th, 2026 at 10:45:12 AM
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React (Functional Components)
+- React Hooks (`useState`, `useEffect`)
+- date-fns
+- CSS
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/react-live-clock.git
+
+Navigate into the project directory:
+cd react-live-clock
+
+Install dependencies:
+npm install
+Usage
+
+Start the development server:
+npm run dev
+or (if using Create React App):
+npm start
+
+Then open:
+http://localhost:5173
+(or the port shown in your terminal)
+
+Project Structure
+src/
+ ├── App.jsx
+ ├── style.css
+ └── main.jsx
+Dependencies
+
+Make sure date-fns is installed:
+npm install date-fns
